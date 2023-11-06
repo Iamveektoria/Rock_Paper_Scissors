@@ -8,7 +8,7 @@ In this game, two players compete. Each player secretly selects one of three mov
 
 ## Object-Oriented Design
 
-This Python implementation uses object-oriented programming. The main class, Player, has four subclasses, one of which represents the human player. You can choose to play against one of three distinct computer players, each with unique strategies, or you can watch two computer players battle it out.
+This Python implementation uses object-oriented programming. The main class, Player, has five subclasses, one of which represents the human player. You can choose to play against one of three distinct computer players, each with unique strategies, or you can watch two computer players battle it out.
 
 ## Features
 
