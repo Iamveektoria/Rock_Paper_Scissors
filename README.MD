@@ -1,11 +1,27 @@
-This is a simple game called Rock, Scissors or Paper!
+# Rock, Scissors, Paper Game
 
-The game of Rock Paper Scissors is played throughout the world. It dates back to the Han Dynasty of ancient China, contemporary with the Roman Empire. Today it is called jian dao, shi tou, bu in China, pierre-papier-ciseaux or chifoumi in France; roshambo in parts of the U.S., taş kağıt makas in Turkey, and jan-ken-pon in Japan. It is the distant ancestor of the type system in the immensely popular Pokémon games. The game is played competitively; there have been international RPS tournaments — however, it's more commonly used as a playful way of settling disputes, whether in the schoolyard or the barroom.
+Welcome to Rock, Scissors, Paper Game – **a classic game known worldwide!** This timeless game, also known as jian dao, shi tou, bu in China, pierre-papier-ciseaux in France, roshambo in parts of the U.S., taş kağıt makas in Turkey, and jan-ken-pon in Japan, has entertained people for centuries. Initially played during the Han Dynasty in ancient China, it's a playful way of settling disputes and making decisions, whether in schoolyards or barrooms.
 
-The game has two players. In a single round of the game, each player secretly chooses one of three moves, or "throws" — rock, paper, or scissors. Then, players reveal their moves at the same time. If both players picked the same move, there is no winner. Otherwise, rock beats scissors; paper beats rock; and scissors beat paper. Players can play a single round, or "best of three", or any number of other options.
+## How to Play
 
-This program uses object oriented programming. It has four subclasses of the main class - Player, of which one is the human player! This means you can either play with one of the 3 different created player whcih ofcourse plays differently or you can watch two players play!
+In this game, two players compete. Each player secretly selects one of three moves: rock, paper, or scissors. When both players reveal their moves simultaneously, rock beats scissors, paper beats rock, and scissors beat paper. If both players pick the same move, it's a draw. The game can be played as a single round or extended to a "best of three" series or any number of rounds you prefer.
 
-The code ensures the humanplayer input is always valid and catches any error without crashing. It gives the human player the option of playing once, thrice or quitting during the game play. After every round of play, the program announces the players score and continues for the remaining rounds accumulatively before printed out who won over all!
+## Object-Oriented Design
 
-This code is in line the Python pycodestyle standards!
+This Python implementation uses object-oriented programming. The main class, Player, has four subclasses, one of which represents the human player. You can choose to play against one of three distinct computer players, each with unique strategies, or you can watch two computer players battle it out.
+
+## Features
+
+1. User-Friendly Interface: The game ensures valid human player input and handles errors gracefully without crashing.
+2. Flexible Gameplay: Players can choose to play a single round, play a "best of three" series, or quit the game at any time.
+3. Scorekeeping: After each round, the program displays the players' scores and continues the game for the remaining rounds. The final winner is announced at the end.
+
+## How to Run the Game
+
+1. Clone the repository: git clone <[repository-url](https://github.com/Iamveektoria/Rock_Paper_Scissors)>
+2. Navigate to the project directory: cd rock-scissors-paper
+3. Run the game: python game.py
+
+Feel free to contribute to this project and enjoy the timeless fun of Rock, Scissors, Paper! 🎉
+
+**This code adheres to the Python PEP 8 style guide, ensuring clean and readable code.**
