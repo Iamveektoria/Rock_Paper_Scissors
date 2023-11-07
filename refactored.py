@@ -149,9 +149,6 @@ class Player:
 
 # This player always plays Rock.
 class AllRockPlayer(Player):
-    def __init__(self):
-        super().__init__()
-
     pass
 
 
@@ -205,27 +202,15 @@ class CyclePlayer(Player):
         self.my_move = random.choice(moves)
         self.current_index = 0
 
-    def move(self):
-        # self.current_index = self.my_move.index(moves)
-        return self.my_move
-
     # The move method cycles this players move according to the list
     # No matter where it starts from! It just keeps
     # increasing the index position till it gets
     # to the end of the list and starts again from zero
+    def move(self):
+        return moves[(moves.index(self.my_move) + 1) % len(moves)]
+
     def learn(self, my_move, their_move):
-        self.move_index = moves.index(my_move)
-        if (self.move_index < (len(moves) - 1)) and (self.move_index != 0):
-            self.current_index = self.move_index
-            self.current_index += 1
-            self.my_move = moves[self.current_index]
-        elif self.move_index == len(moves) - 1:
-            self.current_index = self.current_index
-            self.current_index -= self.current_index
-            self.my_move = moves[self.current_index]
-        elif self.move_index == 0:
-            self.current_index += 1
-            self.my_move = moves[self.current_index]
+        self.my_move = my_move
 
 
 # This is where the game play starts!
